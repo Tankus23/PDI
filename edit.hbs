@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование книг</title>
+    <link rel="icon" href="https://psv4.userapi.com/c236331/u200006690/docs/d8/c0161af993fe/libraries_84323.png?extra=LvfCb3eEu6HJd2482v1l7emFgestHnwmnkZriBouMGJ97GTd7kI0P1UGNpAR0HeEnxWih8KVv-IQMQ3vcRF53qC6Ihv9zSiSYv-cy0ecgjwCtRuB0IdrakPvuTxAKYBYfJ1X7lRroVRMgGbkE0rbEs1FWQ" type="image/x-icon">
+    <meta charset="utf-8" />
+    <style>.field{width:180px;}</style>
+</head>
+<body>
+<h1>Редактирование книг</h1>
+<form action="/edit" method="POST">
+    <input type="hidden" name="id" value="{{book.id}}" />
+    <label>Название</label><br>
+    <input name="название" value="{{book.название}}"  class="field" /><br><br>
+
+    <label>Описание</label><br>
+    <input name="описание" value="{{book.описание}}"  class="field" /><br><br>       
+    <label>Жанр</label><br>
+    <input name="жанр_id" value="{{book.жанр_id}}"  class="field" /><br><br>
+
+    <label>Автор</label><br>
+    <input name="автор_id" value="{{book.автор_id}}"  class="field" /><br><br>
+
+    <label>Год</label><br>
+    <input name="год_id" value="{{book.год_id}}"  class="field" /><br><br>
+
+    <label>Печатное издательство</label><br>
+    <input name="печатное_издательство_id" value="{{book.печатное_издательство_id}}"  class="field" /><br><br>
+
+    <label>Язык</label><br>
+    <input name="язык_id" value="{{book.язык_id}}"  class="field" /><br><br>
+   
+    
+    <label>Область</label><br>
+    <input name="область_id" value="{{book.область_id}}"  class="field" /><br><br>
+   
+
+    <input type="submit" value="Отправить" />
+</form>
+<a href="/">К списку пользователей</a>
+</body>
+<html>
